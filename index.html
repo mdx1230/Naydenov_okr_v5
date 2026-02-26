@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<div id="output"></div>
+<script>
+  //задание 5
+	let ddiv=document.getElementById("output");
+	document.addEventListener("keydown",function(event)
+	{
+		if(event.key==" ")
+		{
+			ddiv.textContent+="_";
+		}
+		else{
+			ddiv.textContent+=event.key;
+		}
+		
+	});
+</script>
